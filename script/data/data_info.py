@@ -1,7 +1,10 @@
 import numpy as np
 
+class BaseData:
+    pass
 
-class BrainT2Data:
+
+class BrainT2Data(BaseData):
     def __init__(self) -> None:
         self.name = "Katolic T2 Data"
         self.train_data_path = "/"
@@ -11,7 +14,7 @@ class BrainT2Data:
         pass
 
 
-class BrainT1Data:
+class BrainT1Data(BaseData):
     def __init__(self) -> None:
         self.name = "Katolic T1 Data"
         self.train_data_path = "/"
