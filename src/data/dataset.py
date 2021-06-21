@@ -17,6 +17,6 @@ class CustomTFRecordDataset(TFRecordDataset):
     'image/encoded_image' : 'string'
 
     """
-
     def __init__(self, tfrecod_path: str, index_path: Union[str, None], description: dict, transform=decode_image) -> None:
         super().__init__(tfrecod_path, index_path, description, transform=decode_image)
+
