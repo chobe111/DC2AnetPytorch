@@ -15,5 +15,5 @@ def decode_name(input: tensor.Tensor) -> str:
     name = ""
     for i in chr_arr:
         name += i
-    
+
     return name
